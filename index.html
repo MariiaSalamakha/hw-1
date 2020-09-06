@@ -1,115 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Work 1</title>
-    <style>
-        *
-        {
-          font-size: 20 px;
-          font-family: Georgia, 'Times New Roman', Times, serif;  
-          background-color: beige; 
-                
-        }
-        h1, h2 
-        {
-            text-align: center;
-        }
-        em
-        {
-            color: blue;
-        
-        }
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Git commands</h1>
+    <ul>
+      <h3><strong>There are the most popular git commands:</strong></h3>
 
-
-    </style>
-
-</head>
-<body>
-    <h1>
-        Git commands
-    </h1>
-    <ul><strong>There are the most popular git commands:</strong> 
-
-        <br>
-        
-        <li>
-            git config --global user.name blabla <em>Sets your username</em>
-        </li>
-        <li>
-            git config --global user.email blabal@bla <em>Sets your email</em>
-        </li>
-        <li>
-            git init <em>Creates a new Git repository</em>
-        </li>
-        <li>
-            git status <em>Shows the current state of your Git working directory and staging area</em>
-        </li>
-        <li>
-            git add <em>Command adds new or changed files in your working directory to the Git staging area</em>
-        </li>
-        <li> 
-            git commit <em>Command is used to save your changes to the local repository</em>
-        </li>
-        <li>
-            git log <em>Lists the commits made in that repository in reverse chronological order; that is, the most recent commits show up first.</em>
-        </li>
-        <li>
-            git checkout <em>Command is used to check out of an existing branch and view another branch of code</em>
-        </li>
-        <li> 
-            git branch <em>Command helps you create, delete, and list branches</em>
-        </li>
-        <li>
-            git push <em>Push commits made on your local branch to a remote repository</em>
-        </li>
-        <li>
-            git pull <em>Command used to update the local version of a repository from a remote</em>
-        </li>
-        <li>
-            git merge <em>This command is used by git pull to incorporate changes from another repository and can be used by hand to merge changes from one branch into another.
-            </em>
-        </li>
-        <li>
-            git clone <em>Command downloads an existing Git repository to your local computer</em>
-        </li>
+      <li>git config --global user.name blabla <em>Sets your username</em></li>
+      <li>
+        git config --global user.email blabal@bla <em>Sets your email</em>
+      </li>
+      <li>git init <em>Creates a new Git repository</em></li>
+      <li>
+        git status
+        <em
+          >Shows the current state of your Git working directory and staging
+          area</em
+        >
+      </li>
+      <li>
+        git add
+        <em
+          >Command adds new or changed files in your working directory to the
+          Git staging area</em
+        >
+      </li>
+      <li>
+        git commit
+        <em>Command is used to save your changes to the local repository</em>
+      </li>
+      <li>
+        git log
+        <em
+          >Lists the commits made in that repository in reverse chronological
+          order; that is, the most recent commits show up first.</em
+        >
+      </li>
+      <li>
+        git checkout
+        <em
+          >Command is used to check out of an existing branch and view another
+          branch of code</em
+        >
+      </li>
+      <li>
+        git branch <em>Command helps you create, delete, and list branches</em>
+      </li>
+      <li>
+        git push
+        <em>Push commits made on your local branch to a remote repository</em>
+      </li>
+      <li>
+        git pull
+        <em
+          >Command used to update the local version of a repository from a
+          remote</em
+        >
+      </li>
+      <li>
+        git merge
+        <em
+          >This command is used by git pull to incorporate changes from another
+          repository and can be used by hand to merge changes from one branch
+          into another
+        </em>
+      </li>
+      <li>
+        git clone
+        <em
+          >Command downloads an existing Git repository to your local
+          computer</em
+        >
+      </li>
     </ul>
     <h2>What does it mean gitignore files ?</h2>
     <p>
-     The .gitignore file is a text file that tells Git which files or folders to ignore in a project.<br>
-      <br>
-    A local .gitignore file is usually placed in the root directory of a project. You can also create a global .gitignore file and any entries in that file will be ignored in all of your Git repositories.<br>
-      <br>
-    To create a local .gitignore file, create a text file and name it .gitignore (remember to include the . at the beginning). Then edit this file as needed. Each new line should list an additional file or folder that you want Git to ignore.<br>
-      <br>
-    The entries in this file can also follow a matching pattern.<br>
+      The .gitignore file is a text file that tells Git which files or folders
+      to ignore in a project.<br />
+      <br />
+      A local .gitignore file is usually placed in the root directory of a
+      project. You can also create a global .gitignore file and any entries in
+      that file will be ignored in all of your Git repositories.<br />
+      <br />
+      To create a local .gitignore file, create a text file and name it
+      .gitignore (remember to include the . at the beginning). Then edit this
+      file as needed. Each new line should list an additional file or folder
+      that you want Git to ignore.<br />
+      <br />
+      The entries in this file can also follow a matching pattern.<br />
     </p>
     <ul>
-        <li>
-           *  is used as a wildcard match
-        </li>
-        <li>
-           / is used to ignore pathnames relative to the .gitignore file
-        </li>
-        <li>
-           #  is used to add comments to a .gitignore file
-        </li>
+      <li>* is used as a wildcard match</li>
+      <li>/ is used to ignore pathnames relative to the .gitignore file</li>
+      <li># is used to add comments to a .gitignore file</li>
     </ul>
-    <ul><strong>There are also some git commands:</strong>
+    <ul>
+      <h3><strong>There are also some git commands:</strong></h3>
 
-        <br>
-
-        <li>git revert <em>Is used to record some new commits to reverse the effect of some earlier commits (often only a faulty one).</em>
-        </li>
-        <li>git reset <em>Will take your branch back to a certain point in the commit history</em>
-        </li>
-        <li>git rebase <em>Will simply drop merge commits from the todo list, and put the rebased commits into a single, linear branch</em> 
-        </li>
-        <li>git cherry-pick <em>Duplicates a commit already in the current history, it will become empty</em>
-        </li>
-        <li>git stash <em>Command can help you to (temporarily but safely) store your uncommitted local changes - and leave you with a clean working copy</em>
-        </li>
+      <li>
+        git revert
+        <em
+          >Is used to record some new commits to reverse the effect of some
+          earlier commits (often only a faulty one).</em
+        >
+      </li>
+      <li>
+        git reset
+        <em
+          >Will take your branch back to a certain point in the commit
+          history</em
+        >
+      </li>
+      <li>
+        git rebase
+        <em
+          >Will simply drop merge commits from the todo list, and put the
+          rebased commits into a single, linear branch</em
+        >
+      </li>
+      <li>
+        git cherry-pick
+        <em
+          >Duplicates a commit already in the current history, it will become
+          empty</em
+        >
+      </li>
+      <li>
+        git stash
+        <em
+          >Command can help you to (temporarily but safely) store your
+          uncommitted local changes - and leave you with a clean working
+          copy</em
+        >
+      </li>
     </ul>
-</body>
+  </body>
 </html>
